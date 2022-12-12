@@ -31,11 +31,11 @@
 				#header, #footer {
 					width: 100%;
 					height: 120px;
-					background-color: lime;
+					background-color:limegreen;
 				}
 
 				#nav {
-					flex: 100%;
+					flex: ;
 					display: flex;
 					flex-direction: row;
 					justify-content: flex-end;
@@ -77,7 +77,17 @@
 				
 				/* quand l'ecran est moins que 800px */
 				@media screen and (max-width: 800px) {
+					#header,#footer{
+					background-color:aqua;
 				}
+				#nav{}
+				#header{display: flex; flex-direction: row-reverse;}
+				#logo{}
+				#logo{align-items: flex-end;}
+				#nav{flex-direction: colum-reverse; flex: 10%}
+				#header{display: flex; flex-direction: row-reverse;}
+				#maiinContenu{flex: 50%}
+				#aside{flex: 20%;}
 
 				/* quand l'ecran est moins que 650px */
 				@media screen and (max-width: 650px) {
